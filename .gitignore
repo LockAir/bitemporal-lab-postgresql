@@ -1,0 +1,23 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Kotlin
+.kotlin/
+
+# Gradle
+.gradle/
+build/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Temporary files
+*.log
+.DS_Store
+
+# Temporary benchmark results
+results/tmp/

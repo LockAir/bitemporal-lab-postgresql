@@ -1,0 +1,151 @@
+Started: 2026-11-18T15:36:32.596456800Z
+Scenario: retroactive correction of ten January days, one contract per transaction
+contracts=100000 warmup=200 iterations=1000 rounds=6 seed=42
+JVM=21.0.3 OS=Windows 11 arch=amd64
+Time includes execute, result consumption and COMMIT; excludes connection, setup and parameter binding
+Each round uses fresh schemas; order alternates A/B and B/A; no retries
+Median averages middle values; p95 is nearest-rank; summaries are per round
+Round 1 approach_a
+PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+autovacuum=on 
+default_transaction_isolation=read committed 
+fsync=on 
+full_page_writes=on 
+jit=on 
+max_connections=100 
+max_parallel_workers_per_gather=2 
+shared_buffers=16384 8kB
+synchronous_commit=on 
+work_mem=4096 kB
+Round 1 approach_b
+PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+autovacuum=on 
+default_transaction_isolation=read committed 
+fsync=on 
+full_page_writes=on 
+jit=on 
+max_connections=100 
+max_parallel_workers_per_gather=2 
+shared_buffers=16384 8kB
+synchronous_commit=on 
+work_mem=4096 kB
+Round 2 approach_b
+PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+autovacuum=on 
+default_transaction_isolation=read committed 
+fsync=on 
+full_page_writes=on 
+jit=on 
+max_connections=100 
+max_parallel_workers_per_gather=2 
+shared_buffers=16384 8kB
+synchronous_commit=on 
+work_mem=4096 kB
+Round 2 approach_a
+PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+autovacuum=on 
+default_transaction_isolation=read committed 
+fsync=on 
+full_page_writes=on 
+jit=on 
+max_connections=100 
+max_parallel_workers_per_gather=2 
+shared_buffers=16384 8kB
+synchronous_commit=on 
+work_mem=4096 kB
+Round 3 approach_a
+PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+autovacuum=on 
+default_transaction_isolation=read committed 
+fsync=on 
+full_page_writes=on 
+jit=on 
+max_connections=100 
+max_parallel_workers_per_gather=2 
+shared_buffers=16384 8kB
+synchronous_commit=on 
+work_mem=4096 kB
+Round 3 approach_b
+PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+autovacuum=on 
+default_transaction_isolation=read committed 
+fsync=on 
+full_page_writes=on 
+jit=on 
+max_connections=100 
+max_parallel_workers_per_gather=2 
+shared_buffers=16384 8kB
+synchronous_commit=on 
+work_mem=4096 kB
+Round 4 approach_b
+PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+autovacuum=on 
+default_transaction_isolation=read committed 
+fsync=on 
+full_page_writes=on 
+jit=on 
+max_connections=100 
+max_parallel_workers_per_gather=2 
+shared_buffers=16384 8kB
+synchronous_commit=on 
+work_mem=4096 kB
+Round 4 approach_a
+PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+autovacuum=on 
+default_transaction_isolation=read committed 
+fsync=on 
+full_page_writes=on 
+jit=on 
+max_connections=100 
+max_parallel_workers_per_gather=2 
+shared_buffers=16384 8kB
+synchronous_commit=on 
+work_mem=4096 kB
+Round 5 approach_a
+PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+autovacuum=on 
+default_transaction_isolation=read committed 
+fsync=on 
+full_page_writes=on 
+jit=on 
+max_connections=100 
+max_parallel_workers_per_gather=2 
+shared_buffers=16384 8kB
+synchronous_commit=on 
+work_mem=4096 kB
+Round 5 approach_b
+PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+autovacuum=on 
+default_transaction_isolation=read committed 
+fsync=on 
+full_page_writes=on 
+jit=on 
+max_connections=100 
+max_parallel_workers_per_gather=2 
+shared_buffers=16384 8kB
+synchronous_commit=on 
+work_mem=4096 kB
+Round 6 approach_b
+PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+autovacuum=on 
+default_transaction_isolation=read committed 
+fsync=on 
+full_page_writes=on 
+jit=on 
+max_connections=100 
+max_parallel_workers_per_gather=2 
+shared_buffers=16384 8kB
+synchronous_commit=on 
+work_mem=4096 kB
+Round 6 approach_a
+PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+autovacuum=on 
+default_transaction_isolation=read committed 
+fsync=on 
+full_page_writes=on 
+jit=on 
+max_connections=100 
+max_parallel_workers_per_gather=2 
+shared_buffers=16384 8kB
+synchronous_commit=on 
+work_mem=4096 kB

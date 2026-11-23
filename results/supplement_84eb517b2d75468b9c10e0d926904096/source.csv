@@ -1,0 +1,6 @@
+file,nonblank_noncomment_lines,sha256
+"common.sql.inc","179","15eb13a46dcb2c72da2f3ab2c24bbe69fdfd967aea7aec33ada6e9ca0031c067"
+"operations.sql.inc","39","a0aec6ff9994c2e04cf61da89e4112071342998c5b6d321deacc868b3642659b"
+"approach_a.sql.inc","58","fb4496df2240948f9f212e718cf67d6266439cbae5021445781bec0f7c2d29c7"
+"approach_b.sql.inc","8","44abb87287f0a452e3f3a99fab2c5bb6f7382a7345fe127366bd9f6e33b103d4"
+"migrate_a_to_b.sql.inc","17","4d785408d09872e509741d7479b7b20bcd79f3c01a4fdb9d9e8f431984b2dbf2"

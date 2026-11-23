@@ -1,0 +1,9 @@
+approach,first_operation,first_end,passed
+approach_a,parent,commit,20
+approach_a,parent,rollback,20
+approach_a,child,commit,20
+approach_a,child,rollback,20
+approach_b,parent,commit,20
+approach_b,parent,rollback,20
+approach_b,child,commit,20
+approach_b,child,rollback,20

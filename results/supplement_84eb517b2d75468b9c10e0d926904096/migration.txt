@@ -1,0 +1,3 @@
+PASS: isolated 10-contract A-to-B migration; 4 declared logical steps, 12 DDL statements, one transaction.
+All four table contents unchanged, six read scenarios verified, overlap/missing-parent/parent-shortening rejected.
+No production migration, duration or online availability claim. Common history and correct_price stay unchanged.

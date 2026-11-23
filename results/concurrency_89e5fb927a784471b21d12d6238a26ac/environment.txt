@@ -1,0 +1,8 @@
+Controlled parent/child conflict; READ COMMITTED; repetitions=20
+JVM=21.0.3 OS=Windows 11
+First operation completes without commit; second starts; observer verifies blocker PID; first commits or rolls back.
+Wait events describe locking, not performance. All final rows and history are checked. No retries.
+approach_a: PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+isolation=read committed
+approach_b: PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+isolation=read committed

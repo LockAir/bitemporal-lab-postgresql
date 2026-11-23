@@ -1,0 +1,163 @@
+Started: 2026-11-18T18:36:24.818039800Z
+Scenario: bitemporal price lookup; before correction, after correction, outside corrected period
+contracts=100000 warmup=200 iterations=1000 rounds=6 seed=42
+JVM=21.0.3 OS=Windows 11 arch=amd64
+Time includes SELECT execution and result consumption in auto-commit; excludes binding and answer validation
+Each round uses fresh schemas; order alternates A/B and B/A; no retries
+Median averages middle values; p95 is nearest-rank; summaries are per round
+Round 1 approach_a boundaries=(2026-11-18T18:36:59.553304Z, 2026-11-18T18:37:10.147332Z)
+Round 1 approach_a
+PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+autovacuum=on 
+default_transaction_isolation=read committed 
+fsync=on 
+full_page_writes=on 
+jit=on 
+max_connections=100 
+max_parallel_workers_per_gather=2 
+shared_buffers=16384 8kB
+synchronous_commit=on 
+work_mem=4096 kB
+Round 1 approach_b boundaries=(2026-11-18T18:37:44.277937Z, 2026-11-18T18:37:53.914220Z)
+Round 1 approach_b
+PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+autovacuum=on 
+default_transaction_isolation=read committed 
+fsync=on 
+full_page_writes=on 
+jit=on 
+max_connections=100 
+max_parallel_workers_per_gather=2 
+shared_buffers=16384 8kB
+synchronous_commit=on 
+work_mem=4096 kB
+Round 2 approach_b boundaries=(2026-11-18T18:38:30.744921Z, 2026-11-18T18:38:41.527558Z)
+Round 2 approach_b
+PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+autovacuum=on 
+default_transaction_isolation=read committed 
+fsync=on 
+full_page_writes=on 
+jit=on 
+max_connections=100 
+max_parallel_workers_per_gather=2 
+shared_buffers=16384 8kB
+synchronous_commit=on 
+work_mem=4096 kB
+Round 2 approach_a boundaries=(2026-11-18T18:39:15.403627Z, 2026-11-18T18:39:25.847623Z)
+Round 2 approach_a
+PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+autovacuum=on 
+default_transaction_isolation=read committed 
+fsync=on 
+full_page_writes=on 
+jit=on 
+max_connections=100 
+max_parallel_workers_per_gather=2 
+shared_buffers=16384 8kB
+synchronous_commit=on 
+work_mem=4096 kB
+Round 3 approach_a boundaries=(2026-11-18T18:40:03.088975Z, 2026-11-18T18:40:13.659892Z)
+Round 3 approach_a
+PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+autovacuum=on 
+default_transaction_isolation=read committed 
+fsync=on 
+full_page_writes=on 
+jit=on 
+max_connections=100 
+max_parallel_workers_per_gather=2 
+shared_buffers=16384 8kB
+synchronous_commit=on 
+work_mem=4096 kB
+Round 3 approach_b boundaries=(2026-11-18T18:40:47.694897Z, 2026-11-18T18:40:58.042144Z)
+Round 3 approach_b
+PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+autovacuum=on 
+default_transaction_isolation=read committed 
+fsync=on 
+full_page_writes=on 
+jit=on 
+max_connections=100 
+max_parallel_workers_per_gather=2 
+shared_buffers=16384 8kB
+synchronous_commit=on 
+work_mem=4096 kB
+Round 4 approach_b boundaries=(2026-11-18T18:41:35.837452Z, 2026-11-18T18:41:46.556520Z)
+Round 4 approach_b
+PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+autovacuum=on 
+default_transaction_isolation=read committed 
+fsync=on 
+full_page_writes=on 
+jit=on 
+max_connections=100 
+max_parallel_workers_per_gather=2 
+shared_buffers=16384 8kB
+synchronous_commit=on 
+work_mem=4096 kB
+Round 4 approach_a boundaries=(2026-11-18T18:42:21.997228Z, 2026-11-18T18:42:32.684780Z)
+Round 4 approach_a
+PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+autovacuum=on 
+default_transaction_isolation=read committed 
+fsync=on 
+full_page_writes=on 
+jit=on 
+max_connections=100 
+max_parallel_workers_per_gather=2 
+shared_buffers=16384 8kB
+synchronous_commit=on 
+work_mem=4096 kB
+Round 5 approach_a boundaries=(2026-11-18T18:43:11.563909Z, 2026-11-18T18:43:22.512318Z)
+Round 5 approach_a
+PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+autovacuum=on 
+default_transaction_isolation=read committed 
+fsync=on 
+full_page_writes=on 
+jit=on 
+max_connections=100 
+max_parallel_workers_per_gather=2 
+shared_buffers=16384 8kB
+synchronous_commit=on 
+work_mem=4096 kB
+Round 5 approach_b boundaries=(2026-11-18T18:43:56.791517Z, 2026-11-18T18:44:07.223080Z)
+Round 5 approach_b
+PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+autovacuum=on 
+default_transaction_isolation=read committed 
+fsync=on 
+full_page_writes=on 
+jit=on 
+max_connections=100 
+max_parallel_workers_per_gather=2 
+shared_buffers=16384 8kB
+synchronous_commit=on 
+work_mem=4096 kB
+Round 6 approach_b boundaries=(2026-11-18T18:44:44.208246Z, 2026-11-18T18:44:54.865779Z)
+Round 6 approach_b
+PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+autovacuum=on 
+default_transaction_isolation=read committed 
+fsync=on 
+full_page_writes=on 
+jit=on 
+max_connections=100 
+max_parallel_workers_per_gather=2 
+shared_buffers=16384 8kB
+synchronous_commit=on 
+work_mem=4096 kB
+Round 6 approach_a boundaries=(2026-11-18T18:45:28.640739Z, 2026-11-18T18:45:38.249363Z)
+Round 6 approach_a
+PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+autovacuum=on 
+default_transaction_isolation=read committed 
+fsync=on 
+full_page_writes=on 
+jit=on 
+max_connections=100 
+max_parallel_workers_per_gather=2 
+shared_buffers=16384 8kB
+synchronous_commit=on 
+work_mem=4096 kB
